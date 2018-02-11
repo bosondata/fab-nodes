@@ -25,8 +25,8 @@ object Util {
 
   def showFab(nodes: Array[Node]) = {
     for (i <- nodes) {
-      // 'root@198.211.114.120',
-      println(f"'root@${i.ip + "',"}%-17s  # ${i.name}%-8s " +
+      // 198.211.114.120,
+      println(f"${i.ip}%-17s  # ${i.name}%-8s " +
               f"${i.status} ${i.size} ${i.region}")
     }
     println(s"# total num: ${nodes.length}")
